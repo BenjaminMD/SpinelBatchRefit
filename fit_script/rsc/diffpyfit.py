@@ -18,8 +18,9 @@ class DiffpyFit(CreateRecipe):
         else:
             self.update_data(data_file)
         try:
-            ...
-#            self.recipe.constrain('delta4_Al2O3_Al2_Biso', 'delta4_Al2O3_Al1_Biso')
+            self.recipe.constrain('sAl2O3_Al2_Biso', 'sAl2O3_Al1_Biso')
+            self.recipe.constrain('sAl2O3_Al3_Biso', 'sAl2O3_Al1_Biso')
+            self.recipe.constrain('sAl2O3_Al4_Biso', 'sAl2O3_Al1_Biso')
 #            self.recipe.constrain('delta4_Al2O3_Al3_Biso', 'delta4_Al2O3_Al1_Biso')
 #            self.recipe.constrain('delta4_Al2O3_Al4_Biso', 'delta4_Al2O3_Al1_Biso')
 #            self.recipe.constrain('delta4_Al2O3_Al5_Biso', 'delta4_Al2O3_Al1_Biso')

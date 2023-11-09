@@ -11,7 +11,7 @@ from datetime import datetime
 startTime = datetime.now()
 
 
-OUT_DIR ='./res_spinel/'
+OUT_DIR ='./res_spinel_occ/'
 CONF_PATH = './FitConfig.json'
 
 
@@ -33,7 +33,7 @@ print('Number of data files: {}'.format(len(data_files)))
 
 
 
-res_files = glob('./res_spinel/*.res')
+res_files = glob('./res_spinel_occ/*.res')
 
 res_files_names = ['_'.join(res.split('/')[-1].split('.')[0].split('_')[:7]) for res in res_files]
 filtered_data_files = []

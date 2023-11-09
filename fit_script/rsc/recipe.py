@@ -114,7 +114,7 @@ class CreateRecipe():
         self.param_order = [
             ['free', 'lat', 'scale'],
             ['free', *ns],
-            ['free', 'adp', 'delta2'],
+            ['free', 'adp', 'delta2', 'occ'],
         ]
 
     def remove_phase(self, p):
